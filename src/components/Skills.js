@@ -2,18 +2,24 @@ const Skills = () => {
     const categories = [
         {
             title: "ML & AI",
-            skills: ["Langchain", "Langgraph", "TensorFlow", "Keras", "PyTorch", "Scikit-learn", "NLTK", "GenAI"],
-            size: "col-span-2 row-span-2"
+            skills: [
+                "Supervised Learning", "Unsupervised Learning", "XGBoost", 
+                "Neural Networks", "Transformers", "GPT", "BERT", "GenAI"
+            ],
+            size: "md:col-span-2 md:row-span-2"
         },
         {
-            title: "Technical Stack",
+            title: "Libraries & Frameworks",
+            skills: [
+                "TensorFlow", "Keras", "PyTorch", "Scikit-learn", 
+                "NLTK", "Langchain", "Langgraph"
+            ],
+            size: "md:col-span-1 md:row-span-1"
+        },
+        {
+            title: "Core Programming",
             skills: ["Python", "C", "C++", "SQL", "DBMS", "DSA", "OOPS", "OS"],
-            size: "col-span-1 row-span-1"
-        },
-        {
-            title: "Expertise",
-            skills: ["Deep Learning", "NLP", "Agentic Systems", "MLOps"],
-            size: "col-span-1 row-span-1"
+            size: "md:col-span-1 md:row-span-1"
         }
     ];
 

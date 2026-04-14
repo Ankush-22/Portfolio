@@ -1,5 +1,5 @@
 const Hero = () => {
-    const occupations = ["ML Engineer", "AI Engineer", "Data Scientist"];
+    const occupations = ["ML Engineer", "AI Engineer"];
     const [index, setIndex] = React.useState(0);
     const [subIndex, setSubIndex] = React.useState(0);
     const [reverse, setReverse] = React.useState(false);

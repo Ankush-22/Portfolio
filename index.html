@@ -158,7 +158,7 @@
         };
 
         const Hero = () => {
-            const occupations = ["ML Engineer", "AI Engineer", "Data Scientist"];
+            const occupations = ["ML Engineer", "AI Engineer"];
             const [index, setIndex] = React.useState(0);
             const [subIndex, setSubIndex] = React.useState(0);
             const [reverse, setReverse] = React.useState(false);
@@ -222,9 +222,9 @@
 
         const Skills = () => {
             const cats = [
-                { t: "ML & AI", s: ["Langchain", "Langgraph", "TensorFlow", "Keras", "PyTorch", "Scikit-learn", "NLTK", "GenAI"], sz: "md:col-span-2" },
-                { t: "Programming", s: ["Python", "C", "C++", "SQL"], sz: "md:col-span-1" },
-                { t: "Fundamentals", s: ["DSA", "DBMS", "OOPS", "OS"], sz: "md:col-span-1" }
+                { t: "ML & AI", s: ["Supervised Learning", "Unsupervised Learning", "XGBoost", "Neural Networks", "Transformers", "GPT", "BERT", "GenAI"], sz: "md:col-span-2" },
+                { t: "Libraries & Frameworks", s: ["TensorFlow", "Keras", "PyTorch", "Scikit-learn", "NLTK", "Langchain", "Langgraph"], sz: "md:col-span-1" },
+                { t: "Programming", s: ["Python", "C", "C++", "SQL", "DBMS", "DSA", "OOPS", "OS"], sz: "md:col-span-3" }
             ];
             return (
                 <section id="skills" className="py-24">
