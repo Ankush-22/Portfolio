@@ -2,7 +2,7 @@ const Skills = () => {
     const categories = [
         {
             title: "ML & AI",
-            skills: ["Langchain", "Langgraph", "TensorFlow", "Scikit-learn", "NLTK", "GenAI"],
+            skills: ["Langchain", "Langgraph", "TensorFlow", "Keras", "PyTorch", "Scikit-learn", "NLTK", "GenAI"],
             size: "col-span-2 row-span-2"
         },
         {

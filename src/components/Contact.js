@@ -17,18 +17,19 @@ const Contact = () => {
 
                             <div className="space-y-6">
                                 {[
-                                    { icon: '📧', label: 'Email', value: 'ankushmallick750@gmail.com' },
-                                    { icon: '🔗', label: 'Availability', value: 'Open for new projects' },
+                                    { icon: '📧', label: 'Email', value: 'ankushmallick750@gmail.com', link: 'mailto:ankushmallick750@gmail.com' },
+                                    { icon: '🔗', label: 'LinkedIn', value: 'ankush-mallick750', link: 'https://www.linkedin.com/in/ankush-mallick750/' },
+                                    { icon: '🐙', label: 'GitHub', value: '@Ankush-22', link: 'https://github.com/Ankush-22' },
                                 ].map((item, i) => (
-                                    <div key={i} className="flex items-center space-x-4">
-                                        <div className="w-12 h-12 glass rounded-2xl flex items-center justify-center text-xl shadow-lg border border-white/5 shadow-black/5 transition-all hover:bg-purple-500/10">
+                                    <a key={i} href={item.link} target="_blank" className="flex items-center space-x-4 group/social">
+                                        <div className="w-12 h-12 glass rounded-2xl flex items-center justify-center text-xl shadow-lg border border-white/5 shadow-black/5 transition-all group-hover/social:bg-purple-500/10">
                                             {item.icon}
                                         </div>
                                         <div>
                                             <div className="text-xs font-bold uppercase tracking-widest text-slate-400">{item.label}</div>
-                                            <div className="font-semibold text-slate-900 dark:text-white">{item.value}</div>
+                                            <div className="font-semibold text-slate-900 dark:text-white group-hover/social:text-purple-500 transition-colors">{item.value}</div>
                                         </div>
-                                    </div>
+                                    </a>
                                 ))}
                             </div>
                         </div>

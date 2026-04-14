@@ -149,7 +149,7 @@
             return (
                 <nav className={`fixed left-1/2 -translate-x-1/2 z-[100] transition-all duration-700 ${scrolled ? 'top-6' : 'top-10 w-[90%] max-w-5xl'}`}>
                     <div className={`px-10 py-4 glass rounded-full flex justify-center items-center gap-12 ${scrolled ? 'shadow-2xl border-white/20' : 'border-transparent bg-transparent'}`}>
-                        {['Home', 'About', 'Experience', 'Projects'].map(l => (
+                        {['Home', 'About', 'Experience', 'Projects', 'Contact'].map(l => (
                             <a key={l} href={`#${l.toLowerCase()==='home'?'hero':l.toLowerCase()}`} className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 hover:text-white transition-colors">{l}</a>
                         ))}
                     </div>
@@ -202,7 +202,7 @@
                     <div className="grid md:grid-cols-2 gap-20 items-center">
                         <div className="space-y-8">
                             <h2 className="text-4xl md:text-6xl font-outfit font-bold text-white">The Mission</h2>
-                            <p className="text-lg text-slate-400 leading-relaxed font-light">I architect intelligent frameworks at the intersection of Deep Learning and Generative AI. My focus is on creating autonomous agentic systems that scale effortlessly.</p>
+                            <p className="text-lg text-slate-400 leading-relaxed font-light">I architect intelligent frameworks at the intersection of Deep Learning and Generative AI. Pursuing B.Tech in CSE from <span className="text-white font-bold">University of Engineering & Management (UEM), Jaipur</span>.</p>
                             <div className="p-8 glass rounded-[2.5rem] border-l-4 border-cyan-500">
                                 <p className="italic text-slate-300">"Honing skills to design effective AI solutions with a focus on intelligent automation."</p>
                             </div>
@@ -222,7 +222,7 @@
 
         const Skills = () => {
             const cats = [
-                { t: "ML & AI", s: ["Langchain", "Langgraph", "TensorFlow", "NLTK", "GenAI"], sz: "md:col-span-2" },
+                { t: "ML & AI", s: ["Langchain", "Langgraph", "TensorFlow", "Keras", "PyTorch", "Scikit-learn", "NLTK", "GenAI"], sz: "md:col-span-2" },
                 { t: "Programming", s: ["Python", "C", "C++", "SQL"], sz: "md:col-span-1" },
                 { t: "Fundamentals", s: ["DSA", "DBMS", "OOPS", "OS"], sz: "md:col-span-1" }
             ];
@@ -252,9 +252,9 @@
 
         const Projects = () => {
             const ps = [
-                { t: "ResuScore AI", s: "Semantic ATS", d: "NLP matching using Sentence Transformers.", sz: "md:col-span-2 md:row-span-2", img: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800" },
-                { t: "ReviewLens", s: "Fake Detector", d: "ML detection of hotel review deception.", sz: "md:col-span-1", img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" },
-                { t: "Heart Risk AI", s: "Med Diagnostics", d: "Streamlit-based healthcare analytics.", sz: "md:col-span-1", img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800" }
+                { t: "ResuScore AI", s: "Semantic ATS", d: "NLP matching using Sentence Transformers.", sz: "md:col-span-2 md:row-span-2", img: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800", link: "https://github.com/Ankush-22/ResuScore" },
+                { t: "ReviewLens", s: "Fake Detector", d: "ML detection of hotel review deception.", sz: "md:col-span-1", img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800", link: "https://github.com/Ankush-22/ReviewLens" },
+                { t: "Heart Risk AI", s: "Med Diagnostics", d: "Streamlit-based healthcare analytics.", sz: "md:col-span-1", img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800", link: "https://github.com/Ankush-22/Heart-Disease-Risk-Prediction" }
             ];
             return (
                 <section id="projects" className="py-24">
@@ -262,15 +262,58 @@
                         <h2 className="text-4xl md:text-5xl font-outfit font-bold text-white mb-20 text-center">Intel Systems</h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 auto-rows-[300px]">
                             {ps.map((p, i) => (
-                                <div key={i} className={`group glass rounded-[2.5rem] overflow-hidden glass-card border-white/5 relative ${p.sz}`}>
+                                <a key={i} href={p.link} target="_blank" className={`group glass rounded-[2.5rem] overflow-hidden glass-card border-white/5 relative ${p.sz}`}>
                                     <img src={p.img} className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 opacity-30 group-hover:opacity-60" />
                                     <div className="relative z-20 p-10 h-full flex flex-col justify-end">
                                         <div className="text-[9px] font-bold uppercase tracking-widest text-cyan-400 mb-1">{p.s}</div>
                                         <h3 className="text-3xl font-bold dark:text-white group-hover:text-cyan-400 transition-colors">{p.t}</h3>
                                         <p className="text-slate-400 text-sm font-light mt-2">{p.d}</p>
+                                        <div className="pt-4 flex items-center text-white/50 group-hover:text-white font-bold text-[10px] uppercase tracking-widest transition-colors">
+                                            Source Code →
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             ))}
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        const Contact = () => {
+             const socials = [
+                { i: '📧', l: 'Email', v: 'ankushmallick750@gmail.com', h: 'mailto:ankushmallick750@gmail.com' },
+                { i: '🔗', l: 'LinkedIn', v: 'ankush-mallick750', h: 'https://www.linkedin.com/in/ankush-mallick750/' },
+                { i: '🐙', l: 'GitHub', v: '@Ankush-22', h: 'https://github.com/Ankush-22' }
+            ];
+            return (
+                <section id="contact" className="py-32 relative overflow-hidden">
+                    <div className="container mx-auto px-6 max-w-5xl">
+                        <div className="grid md:grid-cols-2 gap-16 items-center">
+                            <div className="space-y-12">
+                                <h2 className="text-4xl md:text-6xl font-outfit font-bold text-white">Let's build <br/><span className="text-cyan-500">Intelligence</span> together.</h2>
+                                <div className="space-y-6">
+                                    {socials.map((s, i) => (
+                                        <a key={i} href={s.h} target="_blank" className="flex items-center space-x-6 group/item">
+                                            <div className="w-14 h-14 glass rounded-2xl flex items-center justify-center text-2xl shadow-xl transition-all group-hover/item:shadow-cyan-500/10 group-hover/item:bg-white/5">
+                                                {s.i}
+                                            </div>
+                                            <div>
+                                                <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{s.l}</div>
+                                                <div className="text-lg font-medium text-slate-200 group-hover:text-white transition-colors">{s.v}</div>
+                                            </div>
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="glass p-10 rounded-[3rem] border-white/5 shadow-2xl glass-card">
+                                <form className="space-y-6" onSubmit={e => e.preventDefault()}>
+                                    <input type="text" placeholder="Name" className="w-full px-8 py-5 bg-white/5 border border-white/10 rounded-2xl focus:ring-2 focus:ring-cyan-500/50 outline-none dark:text-white transition-all" />
+                                    <input type="email" placeholder="Email" className="w-full px-8 py-5 bg-white/5 border border-white/10 rounded-2xl focus:ring-2 focus:ring-cyan-500/50 outline-none dark:text-white transition-all" />
+                                    <textarea rows="4" placeholder="Brief about your vision..." className="w-full px-8 py-5 bg-white/5 border border-white/10 rounded-2xl focus:ring-2 focus:ring-cyan-500/50 outline-none dark:text-white resize-none transition-all"></textarea>
+                                    <button className="w-full py-6 btn-white rounded-[2rem] font-bold text-lg hover:scale-[1.02] active:scale-[0.98] transition-all">Send Message</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -290,16 +333,16 @@
             };
             return (
                 <div className="fixed bottom-10 right-10 z-[1000]">
-                    <button onClick={() => setOpen(!open)} className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all text-black">
+                    <button onClick={() => setOpen(!open)} className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all text-black border-4 border-black">
                         {open ? '✕' : <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" strokeWidth="2"/></svg>}
                     </button>
                     {open && (
-                        <div className="absolute bottom-20 right-0 w-80 h-[500px] glass rounded-[2.5rem] flex flex-col overflow-hidden animate-fade-in-up">
-                            <div className="p-6 bg-white/5 border-b border-white/5 text-[10px] font-bold tracking-[0.2em] uppercase text-cyan-400">AI Assistant</div>
+                        <div className="absolute bottom-24 right-0 w-80 h-[500px] glass rounded-[2.5rem] flex flex-col overflow-hidden animate-fade-in-up border-white/20 shadow-2xl">
+                            <div className="p-6 bg-white/5 border-b border-white/5 text-[10px] font-bold tracking-[0.2em] uppercase text-cyan-400">Neural Assistant</div>
                             <div className="flex-grow p-6 overflow-y-auto space-y-4 scrollbar-hide">
                                 {msgs.map((m, i) => (
                                     <div key={i} className={`flex ${m.t === 'user' ? 'justify-end' : 'justify-start'}`}>
-                                        <div className={`px-4 py-3 rounded-2xl text-xs ${m.t === 'user' ? 'bg-white text-black font-medium' : 'bg-white/5 text-slate-300 border border-white/5'}`}>{m.text}</div>
+                                        <div className={`px-4 py-3 rounded-2xl text-xs max-w-[85%] ${m.t === 'user' ? 'bg-white text-black font-medium' : 'bg-white/5 text-slate-300 border border-white/5'}`}>{m.text}</div>
                                     </div>
                                 ))}
                             </div>
@@ -331,6 +374,7 @@
                     <About />
                     <Skills />
                     <Projects />
+                    <Contact />
                     <Chatbot />
                     <footer className="py-20 text-center border-t border-white/5">
                         <div className="text-xl font-outfit font-bold mb-2">Ankush Kumar Mallick.</div>
