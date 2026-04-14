@@ -68,12 +68,13 @@ const Hero = () => {
                             View Projects
                         </a>
                         <a 
-                            href="#" 
+                            href="Ankush_Mallick_Resume.pdf" 
+                            download="Ankush_Mallick_Resume.pdf"
                             className="px-12 py-5 glass text-white rounded-2xl font-bold text-[12px] uppercase tracking-widest hover:bg-white/5 transition-all border border-white/10 flex items-center"
                         >
-                            View Resume
+                            Download Resume
                             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88 2.303M5 21l1.414-1.414M3 21l1.414-1.414M17 11V7a4 4 0 00-8 0v4M5 11V7a4 4 0 018 0v4m-9 8l4.5 4.5 4.5-4.5M12 11v8" />
                             </svg>
                         </a>
                     </div>
