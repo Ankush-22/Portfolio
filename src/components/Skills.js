@@ -1,7 +1,7 @@
 const Skills = () => {
     const categories = [
         {
-            title: "ML & AI",
+            title: "ML and AI",
             skills: [
                 "Supervised Learning", "Unsupervised Learning", "XGBoost", 
                 "Neural Networks", "Transformers", "GPT", "BERT", "GenAI"
@@ -9,7 +9,7 @@ const Skills = () => {
             size: "md:col-span-2 md:row-span-2"
         },
         {
-            title: "Libraries & Frameworks",
+            title: "Libraries and Framework",
             skills: [
                 "TensorFlow", "Keras", "PyTorch", "Scikit-learn", 
                 "NLTK", "Langchain", "Langgraph"
@@ -17,8 +17,13 @@ const Skills = () => {
             size: "md:col-span-1 md:row-span-1"
         },
         {
-            title: "Core Programming",
-            skills: ["Python", "C", "C++", "SQL", "DBMS", "DSA", "OOPS", "OS"],
+            title: "Programming",
+            skills: ["Python", "C", "C++", "SQL"],
+            size: "md:col-span-1 md:row-span-1"
+        },
+        {
+            title: "Technical Skills",
+            skills: ["DBMS", "DSA", "OOPS", "OS", "Fundamentals"],
             size: "md:col-span-1 md:row-span-1"
         }
     ];
@@ -35,7 +40,7 @@ const Skills = () => {
                     {categories.map((cat, i) => (
                         <div 
                             key={i} 
-                            className={`glass p-8 rounded-[2rem] flex flex-col justify-between glass-card border-white/5 group ${cat.size}`}
+                            className={`glass p-8 rounded-[2.5rem] flex flex-col justify-between glass-card border-white/5 group ${cat.size}`}
                         >
                             <div className="space-y-2">
                                 <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-slate-500 group-hover:text-white transition-colors">
@@ -59,9 +64,9 @@ const Skills = () => {
                     
                     {/* Visual Filler for Bento Feel */}
                     <div className="glass p-8 rounded-[2rem] glass-card border-white/5 flex items-center justify-center col-span-1 row-span-1">
-                        <div className="text-center space-y-2 opacity-50">
-                            <div className="text-3xl">🚀</div>
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Always learning</div>
+                        <div className="text-center space-y-2 opacity-30">
+                            <div className="text-3xl">🧩</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Problem Solver</div>
                         </div>
                     </div>
                 </div>
