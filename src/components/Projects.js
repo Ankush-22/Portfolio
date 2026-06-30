@@ -7,7 +7,16 @@ const Projects = () => {
             tags: ["LangChain", "Streamlit", "FAISS"],
             github: "https://github.com/Ankush-22/YouTube-Video-RAG-Assistant",
             image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800",
-            size: "md:col-span-2 md:row-span-2"
+            size: "md:col-span-1"
+        },
+        {
+            title: "CiteMind RAG",
+            subtitle: "Multi-Document AI",
+            description: "A modular RAG research assistant with hybrid search and citation-backed generation via LLaMA 3.1.",
+            tags: ["Python", "LangChain", "ChromaDB"],
+            github: "https://github.com/Ankush-22/CiteMind",
+            image: "https://images.unsplash.com/photo-1620802051794-0f274711317f?w=800",
+            size: "md:col-span-1"
         },
         {
             title: "ResuScore",
@@ -16,7 +25,7 @@ const Projects = () => {
             tags: ["Python", "Transformers", "NLP"],
             github: "https://github.com/Ankush-22/ResuScore",
             image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800",
-            size: "md:col-span-1 md:row-span-1"
+            size: "md:col-span-1"
         },
         {
             title: "ReviewLens",
@@ -25,7 +34,7 @@ const Projects = () => {
             tags: ["Machine Learning", "NLP"],
             github: "https://github.com/Ankush-22/ReviewLens",
             image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
-            size: "md:col-span-1 md:row-span-1"
+            size: "md:col-span-1"
         },
         {
             title: "Heart Risk AI",
@@ -34,7 +43,7 @@ const Projects = () => {
             tags: ["Streamlit", "Scikit-Learn"],
             github: "https://github.com/Ankush-22/Heart-Disease-Risk-Prediction",
             image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800",
-            size: "md:col-span-3 md:row-span-1"
+            size: "md:col-span-1"
         }
     ];
 
