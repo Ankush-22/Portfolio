@@ -1,13 +1,22 @@
 const Projects = () => {
     const projects = [
         {
+            title: "YouTube RAG Assistant",
+            subtitle: "AI Video Research Tool",
+            description: "A modular RAG application extracting YouTube transcripts into a searchable FAISS index for AI-powered Q&A using LangChain, Streamlit, and Groq.",
+            tags: ["LangChain", "Streamlit", "FAISS"],
+            github: "https://github.com/Ankush-22/YouTube-Video-RAG-Assistant",
+            image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800",
+            size: "md:col-span-2 md:row-span-2"
+        },
+        {
             title: "ResuScore",
             subtitle: "Semantic AI ATS",
             description: "A high-performance recruitment engine using Sentence Transformers to semantically match resumes to job descriptions with 95% accuracy.",
             tags: ["Python", "Transformers", "NLP"],
             github: "https://github.com/Ankush-22/ResuScore",
             image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800",
-            size: "md:col-span-2 md:row-span-2"
+            size: "md:col-span-1 md:row-span-1"
         },
         {
             title: "ReviewLens",
@@ -25,7 +34,7 @@ const Projects = () => {
             tags: ["Streamlit", "Scikit-Learn"],
             github: "https://github.com/Ankush-22/Heart-Disease-Risk-Prediction",
             image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800",
-            size: "md:col-span-1 md:row-span-1"
+            size: "md:col-span-3 md:row-span-1"
         }
     ];
 
