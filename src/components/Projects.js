@@ -6,7 +6,7 @@ const Projects = () => {
             description: "A modular RAG application extracting YouTube transcripts into a searchable FAISS index for AI-powered Q&A using LangChain, Streamlit, and Groq.",
             tags: ["LangChain", "Streamlit", "FAISS"],
             github: "https://github.com/Ankush-22/YouTube-Video-RAG-Assistant",
-            image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800",
+            image: "https://unsplash.com/photos/B9klYJqQ4DU/download?w=800",
             size: "md:col-span-1"
         },
         {
@@ -15,7 +15,7 @@ const Projects = () => {
             description: "A modular RAG research assistant with hybrid search and citation-backed generation via LLaMA 3.1.",
             tags: ["Python", "LangChain", "ChromaDB"],
             github: "https://github.com/Ankush-22/CiteMind",
-            image: "https://images.unsplash.com/photo-1620802051794-0f274711317f?w=800",
+            image: "https://unsplash.com/photos/dIMLdS-or5s/download?w=800",
             size: "md:col-span-1"
         },
         {
